@@ -1,0 +1,285 @@
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "TTLakes-Bold";
+  src: url(/fonts/TTLakes/TTLakes-Bold.ttf)
+}
+
+@font-face {
+  font-family: "TTLakes-Medium";
+  src: url(/fonts/TTLakes/TTLakes-Medium.ttf)
+}
+
+@font-face {
+  font-family: "TTLakes-Regular";
+  src: url(/fonts/TTLakes/TTLakes-Regular.ttf)
+}
+
+html {
+  min-width: 320px;
+  max-width: 768px;
+  max-height: 1024px;
+}
+
+body {
+  position: relative;
+  width: 320px;
+  height: 1024px;
+  background: #FFFFFF;
+  box-shadow: 16px 0px 52px 0px #0E185033,
+    -2px 0px 4px 0px #454F7E05;
+}
+
+.header__items {
+  display: flex;
+  justify-content: flex-start;
+}
+
+button {
+  background-color: transparent;
+}
+
+.header__items_burger {
+  margin-top: 23px;
+  margin-left: 24px;
+}
+
+.items_button_burger {
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/burger.svg");
+}
+
+.header__items_button:hover,
+.footer__items_button:hover {
+  transform: scale(1.2);
+  filter: saturate(0) opacity(0.5);
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.header__items_logo {
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 97px;
+  height: 51px;
+}
+
+.header__items_logo:hover {
+  transform: rotateX(10deg) rotateY(-10deg) scale(1.1);
+  transition-duration: 1.5s;
+  transition-timing-function: ease-in-out;
+}
+
+.items_button_search {
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/search.svg");
+}
+
+.header__items_search {
+  margin-top: 23px;
+  margin-right: 24px;
+  margin-left: 75px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu__btn {
+  width: 200px;
+  height: 24px;
+  margin-top: 30px;
+  margin-left: 24px;
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
+
+.menu__btn:hover,
+.menu__btn:focus,
+.langs:hover,
+.langs:focus {
+  color: #7E7E82;
+}
+
+.menu__btn:focus::before {
+  position: absolute;
+  left: 0;
+  content: "";
+  width: 4px;
+  height: 32px;
+  border-radius: 1px;
+  background: #41F6D7;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  margin-left: 24px;
+}
+
+.footer__items_button {
+  margin-right: 20px;
+}
+
+.items_button_call {
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/call.svg");
+}
+
+.items_button_chat {
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/chat.svg");
+}
+
+.items_button_profile {
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/profile.svg");
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+
+.mail {
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+  color: #1B1C21;
+  margin-bottom: 10px;
+}
+
+.tel {
+  font-family: TTLakes-Bold;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.6000000238418579px;
+  text-align: left;
+  color: #1B1C21;
+}
+
+.langs__list {
+  display: flex;
+  margin: 24px;
+}
+
+.langs__list_item {
+  margin-right: 10px;
+}
+
+.langs {
+  font-family: TTLakes-Medium;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.20000000298023224px;
+  text-align: left;
+}
