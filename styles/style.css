@@ -120,7 +120,7 @@ body {
     -2px 0px 4px 0px #454F7E05;
 }
 
-.header__items {
+.header {
   display: flex;
   justify-content: flex-start;
 }
@@ -129,45 +129,49 @@ button {
   background-color: transparent;
 }
 
-.header__items_burger {
+span {
+  display: block;
+}
+
+.header__button-burger {
   margin-top: 23px;
   margin-left: 24px;
 }
 
-.items_button_burger {
+.burger-icon {
   width: 40px;
   height: 40px;
   background-image: url("/images/burger.svg");
 }
 
-.header__items_button:hover,
-.footer__items_button:hover {
+.header__button:hover,
+.footer__items-button:hover {
   transform: scale(1.2);
   filter: saturate(0) opacity(0.5);
   transition-duration: 1s;
   transition-timing-function: ease-in-out;
 }
 
-.header__items_logo {
+.header__logo {
   margin-top: 18px;
   margin-left: 20px;
   width: 97px;
   height: 51px;
 }
 
-.header__items_logo:hover {
+.header__logo:hover {
   transform: rotateX(10deg) rotateY(-10deg) scale(1.1);
   transition-duration: 1.5s;
   transition-timing-function: ease-in-out;
 }
 
-.items_button_search {
+.search-icon {
   width: 40px;
   height: 40px;
   background-image: url("/images/search.svg");
 }
 
-.header__items_search {
+.header__button-search {
   margin-top: 23px;
   margin-right: 24px;
   margin-left: 75px;
@@ -178,7 +182,7 @@ button {
   flex-direction: column;
 }
 
-.menu__btn {
+.menu__button {
   width: 200px;
   height: 24px;
   margin-top: 30px;
@@ -190,14 +194,14 @@ button {
   text-align: left;
 }
 
-.menu__btn:hover,
-.menu__btn:focus,
-.langs:hover,
-.langs:focus {
+.menu__button:hover,
+.menu__button:focus,
+.footer__lang-switcher button:hover,
+.footer__lang-switcher button:focus {
   color: #7E7E82;
 }
 
-.menu__btn:focus::before {
+.menu__button:focus::before {
   position: absolute;
   left: 0;
   content: "";
@@ -207,36 +211,36 @@ button {
   background: #41F6D7;
 }
 
-footer {
+.footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 200px;
 }
 
-.items {
+.footer__items {
   display: flex;
   flex-direction: row;
   margin-left: 24px;
 }
 
-.footer__items_button {
+.footer__items-button {
   margin-right: 20px;
 }
 
-.items_button_call {
+.call-icon {
   width: 40px;
   height: 40px;
   background-image: url("/images/call.svg");
 }
 
-.items_button_chat {
+.chat-icon {
   width: 40px;
   height: 40px;
   background-image: url("/images/chat.svg");
 }
 
-.items_button_profile {
+.profile-icon {
   width: 40px;
   height: 40px;
   background-image: url("/images/profile.svg");
@@ -267,16 +271,16 @@ footer {
   color: #1B1C21;
 }
 
-.langs__list {
+.footer__lang-switcher {
   display: flex;
   margin: 24px;
 }
 
-.langs__list_item {
+.footer__lang-switcher-item {
   margin-right: 10px;
 }
 
-.langs {
+.language {
   font-family: TTLakes-Medium;
   font-size: 16px;
   line-height: 24px;
